@@ -8,7 +8,7 @@ module.exports = {
     '/': {
       lang: 'zh-CN',
       title: '前端知识点总结',
-      description: '任何不能够给你快乐的编程都是耍流氓'
+      description: '欢迎进入前端知识的海洋'
     }
   },
   head: [
@@ -25,7 +25,7 @@ module.exports = {
   serviceWorker: true,
   theme: 'vue',
   themeConfig: {
-    repo: 'jasonandjay/study',
+    repo: 'https://github.com/Zhaoqian/study',
 
     docsDir: 'src',
     editLinks: true,
@@ -33,7 +33,7 @@ module.exports = {
     locales: {
       '/': {
         label: '简体中文',
-        repo: 'jasonandjay/study',
+        repo: 'https://github.com/Zhaoqian/study',
       
         selectText: '选择语言',
         editLinkText: '帮助我们改进内容',
@@ -77,7 +77,8 @@ module.exports = {
               { text: '小程序', link: '/zh/miniapp/' },
               { text: '悦读管理后台', link: '/zh/interface/Yuedu.md'},
               { text: 'BlackMarket', link: '/zh/interface/BlackMarket.md'},
-              { text: 'TouTiao', link: '/zh/interface/TouTiao.md'}
+              { text: 'TouTiao', link: '/zh/interface/TouTiao.md'},
+              {text:'Javascript',link :'/zh/javascript/'}
             ]
           },
           // {
@@ -107,7 +108,8 @@ module.exports = {
           ]}],
           '/zh/miniapp/': [{title: '小程序知识点', children: [
             '', 'WXS', 'wepy组件通信', '小程序事件', '小程序路由', '小程序组件', '小程序组件化'
-          ]}]
+          ]}],
+          '/zh/javascript/':[{title:'Javascript知识点',children:['','types','原型链']}]
         }
       }
     },

@@ -87,6 +87,7 @@ export default {
 
     repoLink () {
       const { repo } = this.$site.themeConfig
+      console.log(this.$site)
       if (repo) {
         return /^https?:/.test(repo)
           ? repo
