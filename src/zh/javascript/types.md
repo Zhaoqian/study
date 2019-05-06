@@ -1,8 +1,8 @@
 # js数据类型
-#### 1、分类
-- number
-- string
-- null
-- object 
-- array
-- boolean
+### 1、分类
+- number  数值类型：整型，浮点数，特殊（console。log（0.1+0.2）不等于0.3），NaN（任何涉及NaN的操作都会返回NaN，并且他与任何数值包括自己都不相等）
+- string   字符串 （由双引号或单引号扩住的）
+- null  空类型，即一个空对象指针
+- boolean  布尔类型，表示真假的数据类型
+- array  数组
+- object  对象，属于复杂数据类型
