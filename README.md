@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="280" src="http://localhost:8080/study/avatar.png" alt="logo">
+  <img width="280" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=309378455,2700661327&fm=26&gp=0.jpg" alt="logo">
 </p>
 
 ## Target
