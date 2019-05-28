@@ -7,7 +7,7 @@
 ### 2，维度
 
 #### a，Tree DIFF是对树的每一层进行遍历，如果某组件不存在了，则会直接销毁。如图所示，左边是旧属，右边是新属，第一层是R组件，一模一样，不会发生变化；第二层进入Component DIFF，同一类型组件继续比较下去，发现A组件没有，所以直接删掉A、B、C组件；继续第三层，重新创建A、B、C组件。
-![Tree DIFF](/study/diff/tree.jpg)
+![Tree DIFF](/study/diff/tree.png)
 
 #### b,.componnet diff
 React是基于组件构建应用的，对于组件间的比较所采用的策略也是非常简洁和高效的。
@@ -19,7 +19,7 @@ React是基于组件构建应用的，对于组件间的比较所采用的策略
 
 ```
 如下图所示，当组件D变为组件G时，即使这两个组件结构相似，一旦React判断D和G是不用类型的组件，就不会比较两者的结构，而是直接删除组件D，重新创建组件G及其子节点。虽然当两个组件是不同类型但结构相似时，进行diff算法分析会影响性能，但是毕竟不同类型的组件存在相似DOM树的情况在实际开发过程中很少出现，因此这种极端因素很难在实际开发过程中造成重大影响。 
-![Component DIFF](/study/component.jpg)
+![Component DIFF](/study/diff/component.jpg)
 
 #### c, element diff
 当节点属于同一层级时，diff提供了3种节点操作，分别为INSERT_MARKUP(插入)，MOVE_EXISTING(移动),REMOVE_NODE(删除)。
@@ -28,3 +28,4 @@ React是基于组件构建应用的，对于组件间的比较所采用的策略
 2,MOVE_EXISTING:旧集合中有新组件类型，且element是可更新的类型，这时候就需要做移动操作，可以复用以前的DOM节点。
 3,REMOVE_NODE:旧组件类型，在新集合里也有，但对应的element不同则不能直接复用和更新，需要执行删除操作，或者旧组件不在新集合里的，也需要执行删除操作。
 ```
+

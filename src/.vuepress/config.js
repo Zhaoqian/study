@@ -80,7 +80,10 @@ module.exports = {
               { text: 'BlackMarket', link: '/zh/interface/BlackMarket.md'},
               { text: 'TouTiao', link: '/zh/interface/TouTiao.md'},
               {text:'Javascript',link :'/zh/javascript/'},
-              {text:'diff算法',link :'/zh/diff/diff.md'}
+              {text:'diff算法',link :'/zh/diff/diff.md'},
+              {text:'rem适配',link:'/zh/rem/rem.md'},
+              {text:'构造函数',link:'/zh/Class/Class.md'},
+              {text:'设计模式',link:'/zh/DesignPattern/DesignPattern.md)'}
             ]
           },
           // {
@@ -111,7 +114,7 @@ module.exports = {
           '/zh/miniapp/': [{title: '小程序知识点', children: [
             '', 'WXS', 'wepy组件通信', '小程序事件', '小程序路由', '小程序组件', '小程序组件化'
           ]}],
-          '/zh/javascript/':[{title:'Javascript知识点',children:['','types','原型链']}]
+          '/zh/javascript/':[{title:'Javascript知识点',children:['','types','原型链','递归']}]
         }
       }
     },
